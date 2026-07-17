@@ -369,3 +369,34 @@ home=function(){
   : [['systems','Основы карты и порталы'],['bosses','Боссы и награды'],['systems','Секретные герои и скрытые механики']];
  return `<section class="grid section-grid home-top-grid">${sections.map(x=>`<article class="section-card" onclick="setSection('${x[0]}')">${sectionIcon108(x[0])}<div><h3>${x[1]}</h3><b>${x[2]}</b></div></article>`).join('')}</section><section class="grid home-columns"><article class="panel"><h3>${tr0610('start')}</h3><div class="steps numbered-steps">${steps.map((x,i)=>`<div class="step link" onclick="setSection('${x[0]}')"><span class="step-number">${i+1}</span><span>${x[1]}</span></div>`).join('')}</div></article><article class="panel featured" id="featured"></article></section><section class="grid home-columns"><article class="panel"><h3>${tr0610('changes')}</h3><p class="prose">${tr0610('latest')}</p><button class="primary" onclick="setSection('versions')">${tr0610('openVersions')}</button></article><article class="panel"><h3>${tr0610('status')}</h3><div class="stats"><div class="stat"><span>${tr0610('heroes')}</span><b>${c.heroes}</b></div><div class="stat"><span>${tr0610('items')}</span><b>${c.items}</b></div><div class="stat"><span>${tr0610('abilities')}</span><b>${c.abilities}</b></div><div class="stat"><span>${tr0610('bosses')}</span><b>${c.bosses}</b></div></div></article></section>`
 };
+
+/* v1.0.1 — public GitHub Issues forms and X Hero N 10.8 archive */
+UI0610.ru.reportSub='Выберите тип обращения. GitHub откроет готовую форму с нужными полями.';
+UI0610.en.reportSub='Choose a report type. GitHub will open a structured issue form.';
+UI0610.ru.versionsSub='Патчноуты обновлений и загрузка актуальной версии карты X Hero N.';
+UI0610.en.versionsSub='Map patch notes and the current X Hero N download.';
+
+reports=function(){
+ const root='https://github.com/xHeroNProject/XHeroN-Wiki';
+ const ru=state.lang!=='en';
+ const cards=[
+  ['🐞',ru?'Баг карты':'Map bug',ru?'Ошибка непосредственно в карте: механика, герой, предмет, босс или событие.':'A problem in the map: mechanics, hero, item, boss, or event.',`${root}/issues/new?template=map-bug.yml`],
+  ['📚',ru?'Ошибка в энциклопедии':'Wiki error',ru?'Неверный текст, ссылка, изображение, перевод или характеристика.':'Incorrect text, link, image, translation, or value.',`${root}/issues/new?template=wiki-error.yml`],
+  ['💡',ru?'Предложение':'Suggestion',ru?'Идея по карте, сайту, балансу или новой механике.':'An idea for the map, website, balance, or a new mechanic.',`${root}/issues/new?template=suggestion.yml`]
+ ];
+ return `<section class="page"><div class="page-title"><div><h2>${tr0610('reportTitle')}</h2><p>${tr0610('reportSub')}</p></div><a class="button-link secondary-download" href="${root}/issues" target="_blank">${ru?'Все обращения':'All issues'}</a></div><div class="report-choice-grid">${cards.map(c=>`<a class="report-choice" href="${c[3]}" target="_blank"><span class="report-choice-icon">${c[0]}</span><div><h3>${c[1]}</h3><p>${c[2]}</p></div></a>`).join('')}</div><div class="panel report-note"><p>${ru?'Для отправки обращения потребуется бесплатная учётная запись GitHub. Скриншоты можно перетащить прямо в форму.':'A free GitHub account is required to submit a report. Screenshots can be dragged directly into the form.'}</p></div></section>`;
+};
+
+versions=function(){
+ const mapNotes=DB.versions.filter(v=>!String(v.version||'').toLowerCase().includes('website') && (v.patch_sections?.length || (v.changes||[]).length>1));
+ const cards=mapNotes.map(v=>{
+  const title=state.lang==='en'?(v.title_en||v.title||''):(v.title||v.title_en||'');
+  const changes=state.lang==='en'?(v.changes_en||v.changes||[]):(v.changes||v.changes_en||[]);
+  const sections=(v.patch_sections||[]).map(s=>{const st=state.lang==='en'?(s.title_en||s.title):(s.title||s.title_en);const items=state.lang==='en'?(s.items_en||s.items||[]):(s.items||s.items_en||[]);return `<div class="patch-section"><h4>${esc(st)}</h4><ul>${items.map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>`}).join('');
+  const actions=v.version==='10.8'?`<div class="download-actions"><a class="map-download-main" href="downloads/X-Hero-N-10.8.zip" download>${state.lang==='en'?'Download X Hero N 10.8 (.zip)':'Скачать X Hero N 10.8 (.zip)'}</a><a class="secondary-download" href="downloads/X-Hero N 10.8 — Патчноут.txt" download>${state.lang==='en'?'Patch notes TXT':'Патчноут TXT'}</a></div>`:'';
+  return `<article class="download-row patch-notes-only ${v.version==='10.8'?'release-highlight':''}"><div class="download-copy"><h3>${esc(v.version)} — ${esc(title)}</h3>${v.date?`<div class="release-date">${esc(v.date)}</div>`:''}${sections?`<div class="patch-grid">${sections}</div>`:`<ul>${changes.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`}</div>${actions}</article>`;
+ }).join('');
+ return `<section class="page"><div class="page-title"><div><h2>${tr0610('versions')}</h2><p>${tr0610('versionsSub')}</p></div></div><div class="downloads">${cards}</div></section>`;
+};
+
+render();

@@ -1,0 +1,79 @@
+name: Баг карты X Hero N
+description: Сообщить об ошибке, найденной непосредственно в карте.
+title: "[Баг карты] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за сообщение. Чем точнее описание, тем быстрее получится воспроизвести и исправить ошибку.
+  - type: dropdown
+    id: map-version
+    attributes:
+      label: Версия карты
+      options:
+        - X Hero N 10.8
+        - X Hero N 10.7.01
+        - Другая версия
+    validations:
+      required: true
+  - type: dropdown
+    id: graphics
+    attributes:
+      label: Режим графики
+      options:
+        - Classic
+        - Reforged
+    validations:
+      required: true
+  - type: dropdown
+    id: game-mode
+    attributes:
+      label: Режим игры
+      options:
+        - Одиночная игра
+        - Сетевая игра
+    validations:
+      required: true
+  - type: input
+    id: hero
+    attributes:
+      label: Герой
+      description: Укажите героя, за которого играли, если это имеет значение.
+      placeholder: Например, Паладин
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что произошло?
+      description: Опишите саму ошибку и место, где она возникла.
+      placeholder: Что именно сломалось или работает неправильно?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить ошибку
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      placeholder: Как это должно было работать?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Скриншоты, видео или сохранение
+      description: Перетащите файлы в это поле или добавьте ссылку.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Проверка
+      options:
+        - label: Я проверил, что такого обращения ещё нет в списке Issues.
+          required: true

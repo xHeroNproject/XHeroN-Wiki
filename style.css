@@ -122,3 +122,16 @@ body::after{
   100%{background-position:50% 76%,50% 52%,50% 36%,50% 19%,50% 66%;opacity:.62}
 }
 @media(max-width:760px){.home-top-grid{margin-top:10px}body::before{background-size:28% 27%,22% 20%,19% 18%,18% 16%,14% 76%}body::after{background-size:24% 18%,18% 16%,16% 15%,34% 20%,12% 68%}}
+
+/* v1.0.1 — public report cards and primary map download */
+.report-choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.report-choice{display:flex;gap:14px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:14px;background:rgba(18,12,27,.92);text-decoration:none;color:inherit;transition:.18s ease}
+.report-choice:hover{transform:translateY(-2px);border-color:#9c58c8;box-shadow:0 10px 28px rgba(89,35,126,.28)}
+.report-choice-icon{display:grid;place-items:center;min-width:48px;height:48px;border-radius:12px;background:linear-gradient(145deg,#713393,#321342);font-size:25px;box-shadow:inset 0 0 14px rgba(255,197,92,.14)}
+.report-choice h3{margin:1px 0 8px;color:var(--gold)}
+.report-choice p{margin:0;line-height:1.5;color:var(--muted)}
+.report-note{margin-top:14px}
+.report-note p{margin:0}
+.map-download-main{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:9px;background:linear-gradient(180deg,#9a56c5,#703397);color:white!important;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(104,42,145,.28)}
+.map-download-main:hover{filter:brightness(1.12)}
+@media(max-width:900px){.report-choice-grid{grid-template-columns:1fr}}

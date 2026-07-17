@@ -1,0 +1,49 @@
+name: Ошибка в энциклопедии
+description: Сообщить о неверном тексте, ссылке, изображении или данных на сайте.
+title: "[Ошибка в вики] "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Страница или ссылка
+      placeholder: Вставьте ссылку либо укажите название страницы
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Раздел
+      options:
+        - Герои
+        - Способности
+        - Предметы
+        - Боссы
+        - Системы и секреты
+        - Изменения и загрузки
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Что указано неправильно?
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Как должно быть правильно?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Скриншот или источник
+      description: Перетащите изображение в это поле или добавьте ссылку.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Проверка
+      options:
+        - label: Я проверил, что такого обращения ещё нет в списке Issues.
+          required: true

@@ -1,0 +1,35 @@
+name: Предложение
+description: Предложить улучшение карты, сайта или базы знаний.
+title: "[Предложение] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: К чему относится предложение?
+      options:
+        - Карта X Hero N
+        - Энциклопедия
+        - Новая механика
+        - Баланс
+        - Визуальное оформление
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Предложение
+      placeholder: Опишите идею максимально конкретно.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Зачем это нужно?
+      placeholder: Какую проблему это решит или что улучшит?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Примеры, изображения или ссылки
