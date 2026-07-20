@@ -1,0 +1,66 @@
+X Hero N Wiki — обновление для X Hero N 10.9
+Дата сборки: 2026-07-20
+
+РУССКИЙ
+
+1. Релиз карты
+- На страницу версий добавлены X Hero N 10.9, отдельная карта W3X, двуязычный патчноут и SHA-256.
+- В архив сайта включены все четыре файла релиза.
+
+2. Герои и способности
+- Способности героев выводятся в игровом порядке: первая, вторая, третья, ультимейт.
+- Исправлен порядок способностей Адмирала.
+- Для 181 страницы способностей заполнены английские названия, описания и подсказки изучения.
+- Английские карточки уровней используют переведённые значения соответствующего уровня.
+
+3. Предметы
+- Для 203 предметов заполнены английские названия, описания, бонусы, способы получения и способности предметов.
+- Страницы приведены к единому двуязычному шаблону.
+- Предметы, выпадающие с известных боссов, получили кликабельные ссылки на страницы источников.
+- Карточки источника показывают телепорт и номер босса в цепочке.
+- Удалены дублирующиеся строки с названием босса.
+- Отдельно исправлены Огненная сфера, Щит смерти, Молот Грома (первый свиток), Мёртвая вода и другие ранее сырые карточки.
+- Для первого свитка Молота Грома источником указаны Огры-стражи.
+- Для Щита смерти указаны +612 брони и «Гнев небес»: 2700 урона, перезарядка 60 секунд.
+
+4. Боссы
+- У всех 59 боссов поле «Пункт меню» теперь содержит название текущего босса.
+- Исправлены англоязычные названия телепортов, используемые карточками источников предметов.
+- Исправлены позиции известных боссов внутри цепочек, включая Порченое древо.
+
+5. Интерфейс
+- Добавлены метки порядка способностей.
+- Добавлены кликабельные карточки боссов на страницах предметов.
+- Обновлены стили карточек источников, ссылок, патчноута и кнопок скачивания.
+
+ENGLISH
+
+1. Map release
+- X Hero N 10.9, the standalone W3X, bilingual patch notes, and SHA-256 were added to the Versions page.
+- All four release files are included in the website archive.
+
+2. Heroes and abilities
+- Hero abilities are displayed in gameplay order: first, second, third, ultimate.
+- The Admiral’s ability order was corrected.
+- English names, descriptions, and research tooltips are populated for all 181 ability pages.
+- English level cards use the translated values for the corresponding level.
+
+3. Items
+- English names, descriptions, bonuses, acquisition methods, and item abilities are populated for all 203 items.
+- Item pages use one consistent bilingual layout.
+- Items dropped by known bosses now link to their boss pages.
+- Source cards show the teleporter and the boss position in the encounter chain.
+- Duplicate boss rows were removed.
+- Flame Orb, Shield of Death, Hammer of Thunder (First Scroll), Dead Water, and other rough pages were specifically corrected.
+- Ogre Guards are listed as the source of the first Thunder Hammer scroll.
+- Shield of Death now lists +612 armor and Wrath of Heaven: 2,700 damage, 60-second cooldown.
+
+4. Bosses
+- The Menu entry field now shows the current boss on all 59 boss pages.
+- English teleporter names used by item source cards were corrected.
+- Known boss positions inside encounter chains were corrected, including Corrupted Tree.
+
+5. Interface
+- Ability-order badges were added.
+- Clickable boss source cards were added to item pages.
+- Source-card, link, patch-note, and download-button styles were updated.

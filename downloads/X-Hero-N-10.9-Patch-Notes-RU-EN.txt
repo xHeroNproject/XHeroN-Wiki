@@ -1,0 +1,80 @@
+X HERO N 10.9 — ПАТЧНОУТ / PATCH NOTES
+Дата релиза / Release date: 20.07.2026
+
+РУССКИЙ
+
+НОВЫЕ ГЕРОИ
+- Добавлен Страж кузни — Лотар, герой силы ближнего боя.
+- Добавлен Оссин — Беглец из Культа Проклятых, герой ловкости ближнего боя.
+- Оба героя доступны в обычном стартовом выборе и участвуют в случайном выборе.
+
+ЛОТАР
+- Финальная Classic- и Reforged-модель, портреты и иконки.
+- Кольцо огня: 35 / 55 / 155 / 295 / 555 урона в секунду; расход маны 5 / 10 / 15 / 30 / 50.
+- Огненный кулак: шанс навсегда получить силу и урон после убийства; добавлен плавающий текст срабатывания.
+- Пламенный доспех: постоянный бонус к броне и сопротивлению магии.
+- Огненная нова: усиленный центральный огненный взрыв с отдельным визуальным оформлением.
+
+ОССИН
+- Веер клинков: 90 / 180 / 315 / 585 / 765 урона + 10% текущей ловкости.
+- Танец теней: скриптовая неуязвимость без паладинского визуала; герой может двигаться, атаковать и применять способности.
+- Клинок Бездны: шанс нанести чистый урон, зависящий от текущей ловкости.
+- Тёмная печь: временное ускорение атак и накопление базового урона за успешные удары.
+
+ВЫБОР ГЕРОЕВ И КАРТА
+- Добавлен отдельный стартовый алтарь для новых героев без удаления Паладина.
+- Исправлена расстановка стартовых алтарей.
+- Все стартовые алтари исчезают при появлении босса «Врата Всевластия».
+- Исправлен выбор героя из верхнего правого алтаря: герой получает стартовые предметы и телепортируется к Древу.
+- Сохранены загрузочный экран, превью карты и обязательные авторские строки.
+
+ГРАФИКА
+- Лотар использует чистую оригинальную Reforged-модель Fel Blood Golem и исходные DDS-текстуры.
+- Исправлены Classic/Reforged-модели, портреты и иконки ряда существующих героев из версии 10.8.
+- Classic- и Reforged-ресурсы больше не подменяют друг друга.
+
+САЙТ И ЭНЦИКЛОПЕДИЯ
+- Версия энциклопедии обновлена до 10.9.
+- Страницы героев и способностей приведены к двуязычному формату RU/EN.
+- Способности героев упорядочены от первого навыка до ультимейта.
+- Карточки предметов унифицированы; источники-боссы и цепочки боссов сделаны кликабельными.
+- Исправлены источники, порталы и пункты меню на страницах предметов и боссов.
+
+ENGLISH
+
+NEW HEROES
+- Added Forge Guardian — Lothar, a melee Strength hero.
+- Added Ossin — Fugitive from the Cult of the Damned, a melee Agility hero.
+- Both heroes are available through normal starting hero selection and Random selection.
+
+LOTHAR
+- Final Classic and Reforged models, portraits and icons.
+- Ring of Fire: 35 / 55 / 155 / 295 / 555 damage per second; 5 / 10 / 15 / 30 / 50 mana per second.
+- Fist of Fire: a kill may permanently grant Strength and damage; proc floating text added.
+- Flame Armor: permanent armor and magic-resistance bonuses.
+- Fire Nova: enhanced single central fire explosion with dedicated visual effects.
+
+OSSIN
+- Fan of Knives: 90 / 180 / 315 / 585 / 765 damage + 10% of current Agility.
+- Shadow Dance: scripted invulnerability without the Paladin effect; the hero may move, attack and cast spells.
+- Void Blade: a chance to deal pure damage based on current Agility.
+- Dark Furnace: temporarily accelerates attacks and accumulates base damage on successful hits.
+
+HERO SELECTION AND MAP
+- Added a separate starting altar for the new heroes without removing the Paladin.
+- Improved the starting altar layout.
+- All starting altars disappear when the Gates of Omnipotence boss appears.
+- Fixed the upper-right altar: selected heroes receive starting items and teleport to the Tree correctly.
+- Preserved the loading screen, map preview and mandatory author credits.
+
+GRAPHICS
+- Lothar now uses the clean original Fel Blood Golem Reforged model and source DDS textures.
+- Preserved and improved Classic/Reforged models, portraits and icons from version 10.8.
+- Classic and Reforged resources no longer overwrite each other.
+
+WEBSITE AND ENCYCLOPEDIA
+- Encyclopedia data version updated to 10.9.
+- Hero and ability pages use a complete RU/EN presentation.
+- Hero abilities are ordered from the first skill to the ultimate.
+- Item cards use a consistent layout; boss sources and boss chains are clickable.
+- Corrected missing sources, portals and menu entries on item and boss pages.
