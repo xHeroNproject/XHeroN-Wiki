@@ -1,0 +1,6 @@
+heroes=48
+abilities=189
+reordered_heroes=26
+errors=0
+PASS: every four-skill hero has slots 1,2,3,4 and the detected ultimate is fourth.
+PASS: hero growth renderer uses one-decimal formatting and trims trailing .0.

@@ -83,3 +83,10 @@ ENGLISH
 - Добавлены Classic/Reforged-иконки героев и способностей из карты X Hero N 10.9.
 - Исправлено описание «Кулака огня»: 5/7/9/11/13% шанс; постоянные бонусы +10/+20/+30/+40/+50 к силе и +20/+40/+60/+80/+100 к базовому урону; срабатывание только от убийств, засчитанных Лотару.
 - Добавлены полные английские переводы обеих страниц героев и восьми способностей.
+
+
+10.9.4 — Hero stats and ability order hotfix
+- Hero attribute growth values are rounded to one decimal place (for example: +3.8, +1.2, +1.9).
+- For every hero with four abilities, the actual ultimate is now always displayed fourth.
+- Ultimate detection uses the hero-level requirement and ability level count; normal abilities keep their original relative order.
+- Hero skill badges now follow the corrected per-hero order.
