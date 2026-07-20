@@ -501,3 +501,9 @@ card=function(t,e){
   return `<article class="card entity-card hero-list-card" onclick="openEntity('heroes','${e.raw_id}')">${heroIconStack0610(e)}<div class="entity-card-copy"><h3>${esc(entityName0610('heroes',e))}</h3><p>${esc(heroSummary1092(e).slice(0,240))}</p><div class="technical"><small>${esc(e.raw_id)}</small></div></div></article>`;
 };
 render();
+
+
+/* XHN WEBSITE 1.1.3 — LOTHAR & OSSIN */
+UI0610.ru.latest='Последняя версия — 10.9. Добавлены полные страницы Лотара и Оссина; исправлено описание навыка «Кулак огня».';
+UI0610.en.latest='Latest version: 10.9. Complete Lothar and Ossin pages were added; Fist of Fire was corrected.';
+render();
