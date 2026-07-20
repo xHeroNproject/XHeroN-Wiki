@@ -64,3 +64,10 @@ ENGLISH
 - Ability-order badges were added.
 - Clickable boss source cards were added to item pages.
 - Source-card, link, patch-note, and download-button styles were updated.
+
+10.9.1 — Hero card layout hotfix
+- Hero list summaries no longer include the duplicated English half of bilingual lore.
+- Removed separator lines from hero preview cards.
+- Increased the minimum card width and added safe text wrapping.
+- Prevented card content and attribute-icon fallback text from overflowing into neighboring cards.
+
