@@ -1,3 +1,9 @@
+X Hero N Wiki 1.1.2 / Map 10.9
+- Hero list cards are limited to four readable columns on desktop.
+- Legacy English text is removed from Russian hero lore.
+- Card text is clamped and cannot overlap neighboring cards.
+- CSS, JavaScript, and database cache keys were bumped to v112.
+
 X Hero N Wiki — обновление для X Hero N 10.9
 Дата сборки: 2026-07-20
 

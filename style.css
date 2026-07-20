@@ -149,3 +149,16 @@ body::after{
 .hero-icon-stack{min-width:76px}
 .hero-icon-stack .primary-attr-icon{font-size:0;color:transparent;overflow:hidden}
 @media(max-width:760px){.cards{grid-template-columns:1fr}}
+
+
+/* XHN 10.9.2 — definitive readable hero grid */
+.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))!important;align-items:stretch}
+.entity-card{display:grid!important;grid-template-columns:76px minmax(0,1fr);gap:13px;min-width:0!important;height:auto!important;overflow:hidden!important;align-items:start!important}
+.entity-card>div:last-child,.entity-card-copy{min-width:0!important;max-width:100%;overflow:hidden}
+.entity-card h3,.entity-card p{max-width:100%;white-space:normal!important;overflow-wrap:anywhere!important;word-break:normal!important}
+.entity-card p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden!important;text-overflow:ellipsis}
+.hero-list-card .hero-icon-stack{min-width:76px;max-width:76px}
+.hero-list-card .hero-icon-stack .entity-icon,.hero-list-card .hero-icon-stack .placeholder{width:76px;height:76px;flex-basis:76px}
+@media(min-width:1200px){.cards{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
+@media(max-width:1199px) and (min-width:761px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:760px){.cards{grid-template-columns:1fr!important}}

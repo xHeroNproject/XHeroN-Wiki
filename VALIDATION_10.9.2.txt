@@ -1,0 +1,5 @@
+X Hero N Wiki 1.1.2 validation
+Heroes cleaned: 14
+Russian hero lore with English markers remaining: 0
+Cache version: 112
+Result: PASS

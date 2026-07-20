@@ -472,3 +472,32 @@ versions=function(){
  const cards=mapNotes.map(v=>{const en=state.lang==='en',title=en?(v.title_en||v.title||''):(v.title||v.title_en||''),changes=en?(v.changes_en||v.changes||[]):(v.changes||v.changes_en||[]);const sections=(v.patch_sections||[]).map(s=>{const st=en?(s.title_en||s.title):(s.title||s.title_en),items=en?(s.items_en||s.items||[]):(s.items||s.items_en||[]);return `<div class="patch-section"><h4>${esc(st)}</h4><ul>${items.map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>`}).join('');const latest=String(v.version)==='10.9';const actions=latest?`<div class="download-actions"><a class="map-download-main" href="downloads/X-Hero-N-10.9.zip" download>${en?'Download X Hero N 10.9 (.zip)':'Скачать X Hero N 10.9 (.zip)'}</a><a class="secondary-download" href="downloads/X-Hero-N-10.9.w3x" download>${en?'Map only (.w3x)':'Только карта (.w3x)'}</a><a class="secondary-download" href="downloads/X-Hero-N-10.9-Patch-Notes-RU-EN.txt" download>${en?'Bilingual patch notes':'Двуязычный патчноут'}</a></div>`:'';return `<article class="download-row patch-notes-only ${latest?'release-highlight':''}"><div class="download-copy"><h3>${esc(v.version)} — ${esc(title)}</h3>${v.date?`<div class="release-date">${esc(v.date)}</div>`:''}${sections?`<div class="patch-grid">${sections}</div>`:`<ul>${changes.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`}</div>${actions}</article>`}).join('');return `<section class="page"><div class="page-title"><div><h2>${tr0610('versions')}</h2><p>${tr0610('versionsSub')}</p></div></div><div class="downloads">${cards}</div></section>`
 };
 render();
+
+
+/* XHN 10.9.2 — definitive hero card fix */
+function cleanHeroLore1092(value){
+  let lines=String(value||'').replace(/\r/g,'').split('\n');
+  const cut=lines.findIndex(line=>/^[—–_-]{5,}$/.test(line.trim())||/^(?:The\s+main\s+characteristic|Primary\s+attribute)\b/i.test(line.trim()));
+  if(cut>=0)lines=lines.slice(0,cut);
+  return lines.join('\n').trim();
+}
+function heroLore1092(h){
+  if(state.lang==='en')return String(h.lore_en||'').trim()||cleanHeroLore1092(h.lore||'');
+  return cleanHeroLore1092(h.lore||'');
+}
+function heroSummary1092(h){
+  const lines=heroLore1092(h).split(/\n+/).map(x=>x.trim()).filter(Boolean);
+  if(lines.length&&/^(?:Основная\s+характеристика|Primary\s+attribute|The\s+main\s+characteristic)\b/i.test(lines[0]))lines.shift();
+  return lines.join(' ')||tr0610('hero');
+}
+const heroDetail1092Base=heroDetail;
+heroDetail=function(h){
+  const clean=Object.assign({},h,{lore:cleanHeroLore1092(h.lore||''),lore_en:String(h.lore_en||'').trim()});
+  return heroDetail1092Base(clean);
+};
+const card1092Base=card;
+card=function(t,e){
+  if(t!=='heroes')return card1092Base(t,e);
+  return `<article class="card entity-card hero-list-card" onclick="openEntity('heroes','${e.raw_id}')">${heroIconStack0610(e)}<div class="entity-card-copy"><h3>${esc(entityName0610('heroes',e))}</h3><p>${esc(heroSummary1092(e).slice(0,240))}</p><div class="technical"><small>${esc(e.raw_id)}</small></div></div></article>`;
+};
+render();
