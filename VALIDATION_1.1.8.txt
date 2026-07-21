@@ -1,0 +1,36 @@
+X Hero N Wiki 1.1.8 validation
+================================================
+Map: X Hero N 10.9.2
+Map SHA-256: 2cb3da605e5f9db6ab58d93118dd1a733d6fbf0828300418d99544f1697d64ae
+Checks: 30/30 PASS
+
+[PASS] Site version 1.1.8
+[PASS] Map version 10.9.2
+[PASS] Item count matches — 204
+[PASS] Eye item exists once
+[PASS] Eye recipe has two components
+[PASS] Eye exact stats
+[PASS] Eye minions documented
+[PASS] Eye Tsunami documented
+[PASS] Eye icon classic exists
+[PASS] Eye icon reforged exists
+[PASS] I02M links to Eye
+[PASS] I00K links to Eye
+[PASS] 10.9.2 release is first
+[PASS] Website 1.1.8 entry is second
+[PASS] Database JS synchronized
+[PASS] Index title updated
+[PASS] Index cache 118
+[PASS] App current version updated
+[PASS] Home copy mentions Eye
+[PASS] Download exists: X-Hero-N-10.9.2.w3x — 102377536
+[PASS] Download exists: X-Hero-N-10.9.2.zip — 42013952
+[PASS] Download exists: X-Hero-N-10.9.2-Patch-Notes-RU-EN.txt — 2984
+[PASS] Download exists: X-Hero-N-10.9.2-SHA256.txt — 172
+[PASS] Public map hash matches source
+[PASS] Release ZIP CRC
+[PASS] Release ZIP map member
+[PASS] Release ZIP patch member
+[PASS] Release ZIP SHA member
+[PASS] Release ZIP map bytes match
+[PASS] Map release validation passed

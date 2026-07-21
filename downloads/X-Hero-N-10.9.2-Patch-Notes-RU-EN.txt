@@ -1,0 +1,61 @@
+X Hero N 10.9.2 — Око Левиафана / Eye of Leviathan
+============================================================
+Дата / Date: 2026-07-21
+
+РУССКИЙ
+-------
+
+Новый предмет — Око Левиафана
+- Рецепт: Жезл ненависти + Перстень Глубин.
+- Компоненты автоматически объединяются.
+- +2000 ко всем характеристикам.
+- +195000 здоровья.
+- 6,5% регенерации максимального здоровья в секунду.
+- Рецепт-подсказка добавлена в магазин «Призрак».
+
+Безликие маги
+- При получении предмета появляются два неуязвимых и неуправляемых спутника без коллизии.
+- Каждый атакует раз в секунду и наносит 70% урона героя.
+- Маги следуют за владельцем и телепортируются к нему при сильном отставании.
+- Reforged-модель использует анимацию Spell 1 как анимацию атаки.
+
+Цунами
+- Активная способность предмета.
+- Расширяющаяся волна наносит 15000 магического урона в радиусе 1200.
+- Замедляет передвижение на 50% и скорость атаки на 30% на 6 секунд.
+- Стоимость: 500 маны.
+- Перезарядка: 45 секунд.
+
+Публичная сборка
+- Внутреннее название и загрузочный экран: X-Hero N 10.9.2.
+- Удалены приватные команды =eye, =eyerecipe, =tsunami и =990.
+- Сохранены исправления босса за 1000 убийств, временной неуязвимости Древа и описаний предметов.
+
+ENGLISH
+-------
+
+New item — Eye of Leviathan
+- Recipe: Rod of Hatred + Ring of Depths.
+- The components combine automatically.
+- +2,000 to all attributes.
+- +195,000 health.
+- Regenerates 6.5% of maximum health per second.
+- Added a recipe hint to the Ghost shop.
+
+Faceless Mages
+- Acquiring the item summons two invulnerable, uncontrollable, collisionless companions.
+- Each attacks once per second and deals 70% of the hero’s damage.
+- The mages follow the owner and teleport back when they fall too far behind.
+- The Reforged model uses Spell 1 as its attack animation.
+
+Tsunami
+- Active item ability.
+- An expanding wave deals 15,000 magic damage within a 1,200 radius.
+- Slows movement by 50% and attack speed by 30% for 6 seconds.
+- Cost: 500 mana.
+- Cooldown: 45 seconds.
+
+Public build
+- Internal title and loading screen: X-Hero N 10.9.2.
+- Removed the private =eye, =eyerecipe, =tsunami, and =990 commands.
+- Preserved the 1,000-kill boss, temporary Tree invulnerability, and item-tooltip fixes.

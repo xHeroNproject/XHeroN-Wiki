@@ -110,3 +110,12 @@ Website 1.1.7 — boss data corrections
 - Награда Безликого воителя описана как существенная прибавка в характеристиках без неподтверждённых чисел.
 - Морское чудовище и Линкор ночных эльфов: полная цепочка дополнена Нага-гвардейцем.
 
+
+
+Website 1.1.8 / X Hero N 10.9.2 — Eye of Leviathan
+---------------------------------------------------
+- Added the complete Eye of Leviathan item page and exact Classic/Reforged icon.
+- Added the automatic Rod of Hatred + Ring of Depths recipe and forward links from both components.
+- Documented the two invulnerable Faceless Mage companions and the expanding Tsunami ability.
+- Published the confirmed public 10.9.2 map without private test commands.
+- Updated the current map, release ZIP, bilingual patch notes, SHA-256, home copy, database metadata, and cache versions.
