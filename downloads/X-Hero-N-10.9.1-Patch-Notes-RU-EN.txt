@@ -1,0 +1,23 @@
+X Hero N 10.9.1 — Lothar balance patch
+
+РУССКИЙ
+========
+
+Лотар — «Кулак огня»
+- Шанс срабатывания не изменён: 5 / 7 / 9 / 11 / 13%.
+- Постоянный бонус силы не изменён: +10 / +20 / +30 / +40 / +50.
+- Постоянный бонус базового урона снижен:
+  было: +20 / +40 / +60 / +80 / +100;
+  стало: +10 / +20 / +30 / +45 / +65.
+- Способность по-прежнему срабатывает только от убийств, засчитанных самому Лотару.
+
+ENGLISH
+=======
+
+Lothar — Fist of Fire
+- Proc chance is unchanged: 5 / 7 / 9 / 11 / 13%.
+- Permanent Strength gain is unchanged: +10 / +20 / +30 / +40 / +50.
+- Permanent base attack damage gain was reduced:
+  before: +20 / +40 / +60 / +80 / +100;
+  now: +10 / +20 / +30 / +45 / +65.
+- The ability still triggers only from kills credited directly to Lothar.

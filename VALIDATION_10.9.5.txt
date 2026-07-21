@@ -1,0 +1,7 @@
+X Hero N Wiki 1.1.5 validation
+Map version: 10.9.1
+A1F0 damage values: 10 / 20 / 30 / 45 / 65
+A1F0 strength values: 10 / 20 / 30 / 40 / 50
+Download files present: yes
+Cache key: v115
+Status: PASS

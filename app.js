@@ -402,14 +402,14 @@ versions=function(){
 render();
 
 /* XHN 10.9 WEBSITE FINALIZATION */
-UI0610.ru.brand='Энциклопедия карты · 10.9';
-UI0610.en.brand='Map encyclopedia · 10.9';
-UI0610.ru.footer='X Hero N Wiki — неофициальная энциклопедия, созданная сообществом. Версия данных 10.9.';
-UI0610.en.footer='X Hero N Wiki — an unofficial community encyclopedia. Data version 10.9.';
-UI0610.ru.latest='Последняя версия — 10.9. Добавлены Лотар и Оссин, исправлены алтари выбора и модель Лотара.';
-UI0610.en.latest='Latest version: 10.9. Lothar and Ossin were added; hero-selection altars and Lothar’s model were fixed.';
-UI0610.ru.versionsSub='X Hero N 10.9, двуязычный патчноут и история обновлений.';
-UI0610.en.versionsSub='X Hero N 10.9, bilingual patch notes, and update history.';
+UI0610.ru.brand='Энциклопедия карты · 10.9.1';
+UI0610.en.brand='Map encyclopedia · 10.9.1';
+UI0610.ru.footer='X Hero N Wiki — неофициальная энциклопедия, созданная сообществом. Версия данных 10.9.1.';
+UI0610.en.footer='X Hero N Wiki — an unofficial community encyclopedia. Data version 10.9.1.';
+UI0610.ru.latest='Последняя версия — 10.9.1. Баланс-патч Лотара: «Кулак огня» теперь даёт +10 / +20 / +30 / +45 / +65 базового урона.';
+UI0610.en.latest='Latest version: 10.9.1. Lothar balance patch: Fist of Fire now grants +10 / +20 / +30 / +45 / +65 base attack damage.';
+UI0610.ru.versionsSub='X Hero N 10.9.1, двуязычный патчноут и история обновлений.';
+UI0610.en.versionsSub='X Hero N 10.9.1, bilingual patch notes, and update history.';
 
 function localized109(ru,en){return state.lang==='en'?(en||ru||''):(ru||en||'')}
 function skillSlotLabel109(slot){if(state.lang==='en')return Number(slot)===4?'Ultimate':`Ability ${slot||'—'}`;return Number(slot)===4?'Ульта':`${slot||'—'}-я способность`}
@@ -474,7 +474,7 @@ function translateFallback109(x){return x||''}
 
 versions=function(){
  const mapNotes=DB.versions.filter(v=>!String(v.version||'').toLowerCase().includes('website')&&(v.patch_sections?.length||(v.changes||[]).length>1));
- const cards=mapNotes.map(v=>{const en=state.lang==='en',title=en?(v.title_en||v.title||''):(v.title||v.title_en||''),changes=en?(v.changes_en||v.changes||[]):(v.changes||v.changes_en||[]);const sections=(v.patch_sections||[]).map(s=>{const st=en?(s.title_en||s.title):(s.title||s.title_en),items=en?(s.items_en||s.items||[]):(s.items||s.items_en||[]);return `<div class="patch-section"><h4>${esc(st)}</h4><ul>${items.map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>`}).join('');const latest=String(v.version)==='10.9';const actions=latest?`<div class="download-actions"><a class="map-download-main" href="downloads/X-Hero-N-10.9.zip" download>${en?'Download X Hero N 10.9 (.zip)':'Скачать X Hero N 10.9 (.zip)'}</a><a class="secondary-download" href="downloads/X-Hero-N-10.9.w3x" download>${en?'Map only (.w3x)':'Только карта (.w3x)'}</a><a class="secondary-download" href="downloads/X-Hero-N-10.9-Patch-Notes-RU-EN.txt" download>${en?'Bilingual patch notes':'Двуязычный патчноут'}</a></div>`:'';return `<article class="download-row patch-notes-only ${latest?'release-highlight':''}"><div class="download-copy"><h3>${esc(v.version)} — ${esc(title)}</h3>${v.date?`<div class="release-date">${esc(v.date)}</div>`:''}${sections?`<div class="patch-grid">${sections}</div>`:`<ul>${changes.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`}</div>${actions}</article>`}).join('');return `<section class="page"><div class="page-title"><div><h2>${tr0610('versions')}</h2><p>${tr0610('versionsSub')}</p></div></div><div class="downloads">${cards}</div></section>`
+ const cards=mapNotes.map(v=>{const en=state.lang==='en',title=en?(v.title_en||v.title||''):(v.title||v.title_en||''),changes=en?(v.changes_en||v.changes||[]):(v.changes||v.changes_en||[]);const sections=(v.patch_sections||[]).map(s=>{const st=en?(s.title_en||s.title):(s.title||s.title_en),items=en?(s.items_en||s.items||[]):(s.items||s.items_en||[]);return `<div class="patch-section"><h4>${esc(st)}</h4><ul>${items.map(c=>`<li>${esc(c)}</li>`).join('')}</ul></div>`}).join('');const latest=String(v.version)==='10.9.1';const actions=latest?`<div class="download-actions"><a class="map-download-main" href="downloads/X-Hero-N-10.9.1.zip" download>${en?'Download X Hero N 10.9.1 (.zip)':'Скачать X Hero N 10.9.1 (.zip)'}</a><a class="secondary-download" href="downloads/X-Hero-N-10.9.1.w3x" download>${en?'Map only (.w3x)':'Только карта (.w3x)'}</a><a class="secondary-download" href="downloads/X-Hero-N-10.9.1-Patch-Notes-RU-EN.txt" download>${en?'Bilingual patch notes':'Двуязычный патчноут'}</a></div>`:'';return `<article class="download-row patch-notes-only ${latest?'release-highlight':''}"><div class="download-copy"><h3>${esc(v.version)} — ${esc(title)}</h3>${v.date?`<div class="release-date">${esc(v.date)}</div>`:''}${sections?`<div class="patch-grid">${sections}</div>`:`<ul>${changes.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`}</div>${actions}</article>`}).join('');return `<section class="page"><div class="page-title"><div><h2>${tr0610('versions')}</h2><p>${tr0610('versionsSub')}</p></div></div><div class="downloads">${cards}</div></section>`
 };
 render();
 
@@ -509,6 +509,6 @@ render();
 
 
 /* XHN WEBSITE 1.1.3 — LOTHAR & OSSIN */
-UI0610.ru.latest='Последняя версия — 10.9. Добавлены полные страницы Лотара и Оссина; исправлено описание навыка «Кулак огня».';
-UI0610.en.latest='Latest version: 10.9. Complete Lothar and Ossin pages were added; Fist of Fire was corrected.';
+UI0610.ru.latest='Последняя версия — 10.9.1. Баланс-патч Лотара: «Кулак огня» теперь даёт +10 / +20 / +30 / +45 / +65 базового урона.';
+UI0610.en.latest='Latest version: 10.9.1. Lothar balance patch: Fist of Fire now grants +10 / +20 / +30 / +45 / +65 base attack damage.';
 render();
