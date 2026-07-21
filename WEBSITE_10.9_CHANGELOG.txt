@@ -103,3 +103,10 @@ ENGLISH
 - Restored TRIGSTR item descriptions and shop recipe hints, including Fury of Phoenix.
 - Removed the private =990 test command from the public map.
 - Updated the ZIP package, bilingual patch notes, SHA-256, database metadata, home page copy, and download actions.
+
+Website 1.1.7 — boss data corrections
+------------------------------------
+- Безликий воитель: точное появление после Огненного короля в меню 1-го круга.
+- Награда Безликого воителя описана как существенная прибавка в характеристиках без неподтверждённых чисел.
+- Морское чудовище и Линкор ночных эльфов: полная цепочка дополнена Нага-гвардейцем.
+

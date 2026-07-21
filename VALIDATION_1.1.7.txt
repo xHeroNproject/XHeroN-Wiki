@@ -1,0 +1,23 @@
+X Hero N Wiki 1.1.7 validation
+================================
+Result: 19/19 PASS
+
+[PASS] database.json parses
+[PASS] database.js prefix
+[PASS] database.js suffix
+[PASS] database.js JSON payload parses
+[PASS] JSON and JS databases are identical
+[PASS] site version is 1.1.7
+[PASS] Faceless Warrior exact unlock RU
+[PASS] Faceless Warrior exact unlock EN
+[PASS] Faceless Warrior has one generalized reward
+[PASS] Unverified +5800 removed from Faceless Warrior
+[PASS] tree2_008_sea_monster full RU chain
+[PASS] tree2_008_sea_monster full EN chain
+[PASS] tree2_009_night_elf_battleship full RU chain
+[PASS] tree2_009_night_elf_battleship full EN chain
+[PASS] tree2_010_naga_guard full RU chain
+[PASS] tree2_010_naga_guard full EN chain
+[PASS] index title bumped
+[PASS] database cache buster bumped
+[PASS] Website 1.1.7 changelog entry present

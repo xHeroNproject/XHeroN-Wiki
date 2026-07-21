@@ -1,0 +1,13 @@
+X Hero N Wiki 1.1.7 — PATCH ONLY
+==================================
+
+1. Close any editor that has repository files open.
+2. Extract this archive directly into the XHeroN-Wiki repository root, where the .git folder is located.
+3. Confirm replacement of existing files.
+4. GitHub Desktop should show 7 changed files from this patch.
+5. Suggested commit: Fix Faceless Warrior timing and sea boss chain
+
+Changes:
+- Faceless Warrior appears after the Fire King in the first-round menu.
+- Its reward is described without unverified exact values.
+- Sea Monster and Night Elf Battleship show the complete chain ending in Naga Guard.
