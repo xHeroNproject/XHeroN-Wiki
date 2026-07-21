@@ -1,0 +1,26 @@
+X Hero N Wiki — validation 10.9.6
+Result: 21/21 PASS
+Map SHA-256: dcf190e2604d49f02f5acfb7e4d3d1446451216003480b5c2e813f342563586f
+ZIP SHA-256: c403636013adbee005540f18869fd2edea68b3ee4b5b47fc1482f5ef3eda9d14
+
+01. PASS — Map copied: 68590955
+02. PASS — Map hash: dcf190e2604d49f02f5acfb7e4d3d1446451216003480b5c2e813f342563586f
+03. PASS — ZIP created: 36514034
+04. PASS — Patch notes created: X-Hero-N-10.9.1-Patch-Notes-RU-EN.txt
+05. PASS — SHA file contains map: dcf190e2604d49f02f5acfb7e4d3d1446451216003480b5c2e813f342563586f
+06. PASS — SHA file contains ZIP: c403636013adbee005540f18869fd2edea68b3ee4b5b47fc1482f5ef3eda9d14
+07. PASS — Database meta: {"version": "v1.1.6", "map_version": "10.9.1", "counts": {"heroes": 48, "abilities": 189, "items": 203, "bosses": 59, "systems": 13}, "site_version": "1.1.6", "github": {"repository": "xHeroNProject/XHeroN-Wiki", "issues_url": "https://github.com/xHeroNProject/XHeroN-Wiki/issues/new/choose", "releases_url": "https://github.com/xHeroNProject/XHeroN-Wiki/releases"}}
+08. PASS — Release entry title: Исправление босса за 1000 убийств и подсказок предметов
+09. PASS — Release SHA link: downloads/X-Hero-N-10.9.1-SHA256.txt
+10. PASS — Website entry: Website 1.1.6
+11. PASS — DB JSON/JS sync: Exact parsed data match
+12. PASS — Index cache version: <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X Hero N — Map Encyclopedia · Wiki 1.1.6 · Map 10.9.1</title><link rel="stylesheet" href="style.css?v=116"></head><body><div id="app"></div><script src="data/database.js?v=116"></script><script src="app.js?v=116"></script></body></html>
+13. PASS — App latest RU: Current release summary
+14. PASS — App SHA download: SHA action present
+15. PASS — README version: README current
+16. PASS — ZIP map member: X_Hero_N_10.9.1.w3x
+17. PASS — ZIP patch member: X_Hero_N_10.9.1_PATCH_NOTES_RU_EN.txt
+18. PASS — ZIP SHA member: X_Hero_N_10.9.1_SHA256.txt
+19. PASS — ZIP embedded map hash: dcf190e2604d49f02f5acfb7e4d3d1446451216003480b5c2e813f342563586f
+20. PASS — JavaScript syntax: node --check passed for app.js and data/database.js
+21. PASS — Rendered Downloads page: Node VM rendered the 10.9.1 hotfix, map/ZIP links, patch notes, and SHA-256 action

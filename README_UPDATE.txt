@@ -1,10 +1,10 @@
-X Hero N Wiki — update for map 10.9
+X Hero N Wiki — update for map 10.9.1
 
-- Added X Hero N 10.9 map package, standalone W3X, bilingual patch notes and SHA-256.
-- Hero abilities are displayed in gameplay order: first, second, third, ultimate.
-- Added English names and descriptions for all ability pages.
-- Added English descriptions, bonuses, obtain methods and item abilities for all item pages.
-- Boss-drop items now contain clickable boss sources, teleporter and encounter order when known.
-- Fixed Flame Orb, Shield of Death, Hammer of Thunder (First Scroll), and Dead Water pages.
-- Every boss page now shows the current boss in the Menu entry field.
-- Data version: 10.9; website version: 1.1.0.
+- Published the confirmed X Hero N 10.9.1 public build.
+- Fixed the 1,000-kill Infernal Tank encounter and verified temporary Tree invulnerability in-game.
+- Restored TRIGSTR item descriptions and shop recipe hints, including Fury of Phoenix.
+- Preserved the Lothar Fist of Fire balance patch.
+- Removed the private =990 test command from the public map.
+- Rebuilt the standalone W3X, ZIP package, bilingual patch notes, and SHA-256 files.
+- Updated the home page and Changes & Downloads section.
+- Data version: 10.9.1; website version: 1.1.6.

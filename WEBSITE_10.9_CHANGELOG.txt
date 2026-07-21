@@ -95,3 +95,11 @@ ENGLISH
 - Added X Hero N 10.9.1 to Downloads.
 - Updated Fist of Fire: permanent base damage is now +10 / +20 / +30 / +45 / +65.
 - Strength gain remains +10 / +20 / +30 / +40 / +50.
+
+
+10.9.6 — Confirmed 10.9.1 hotfix publication
+- Replaced the public 10.9.1 W3X with the build verified in-game.
+- Published the fixed 1,000-kill boss trigger and confirmed Tree invulnerability.
+- Restored TRIGSTR item descriptions and shop recipe hints, including Fury of Phoenix.
+- Removed the private =990 test command from the public map.
+- Updated the ZIP package, bilingual patch notes, SHA-256, database metadata, home page copy, and download actions.

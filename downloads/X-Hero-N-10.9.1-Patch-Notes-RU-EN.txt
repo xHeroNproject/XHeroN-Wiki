@@ -1,4 +1,4 @@
-X Hero N 10.9.1 — Lothar balance patch
+X Hero N 10.9.1 — confirmed hotfix
 
 РУССКИЙ
 ========
@@ -11,6 +11,21 @@ X Hero N 10.9.1 — Lothar balance patch
   стало: +10 / +20 / +30 / +45 / +65.
 - Способность по-прежнему срабатывает только от убийств, засчитанных самому Лотару.
 
+Босс за 1000 убийств
+- Исправлен жизненный цикл триггера события: наблюдатель убийств теперь активен с момента инициализации карты.
+- Проверки порога используют «1000 или больше», поэтому событие не теряется при пропуске точного значения.
+- Внутриигровой тест подтверждён: при достижении порога начинается бой с Адским танком, герой отправляется на арену, а Древо получает временную неуязвимость.
+
+Предметы и магазин
+- Восстановлено отображение описаний предметов, использующих TRIGSTR.
+- Восстановлены магазинные рецепты-подсказки, включая «Ярость Феникса».
+- Таблица строк карты сохранена в устойчивом формате UTF-8 с BOM и CRLF.
+
+Релиз
+- Внутреннее название карты и версия загрузочного экрана: X-Hero N 10.9.1.
+- Приватная тестовая команда =990 удалена из публичной сборки.
+- Сохранены авторские строки Nucleus_Genius, Cherub и EternalHuman.
+
 ENGLISH
 =======
 
@@ -21,3 +36,18 @@ Lothar — Fist of Fire
   before: +20 / +40 / +60 / +80 / +100;
   now: +10 / +20 / +30 / +45 / +65.
 - The ability still triggers only from kills credited directly to Lothar.
+
+1,000-kill boss
+- Fixed the encounter trigger lifecycle: the kill watcher is now active from map initialization.
+- Threshold checks use “1,000 or more”, so the event is not lost when the exact value is skipped.
+- In-game verification passed: reaching the threshold starts the Infernal Tank encounter, transfers the hero to the arena, and grants temporary invulnerability to the Tree.
+
+Items and shops
+- Restored item descriptions that use TRIGSTR references.
+- Restored shop recipe hints, including Fury of Phoenix.
+- The map string table is stored in a stable UTF-8 BOM + CRLF format.
+
+Release
+- Internal map title and loading-screen version: X-Hero N 10.9.1.
+- The private =990 test command was removed from the public build.
+- The Nucleus_Genius, Cherub, and EternalHuman credit lines are preserved.
